@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Image from "next/image";
 
 interface Pokemon {
   stats: any;
@@ -30,7 +31,7 @@ const Card: FC<CardProps> = ({ pokemon, loading }) => {
                   <h2 className="tracking-tighter bg-yellow-600 rounded-full text-white w-1/6 text-center">
                     {item.id}
                   </h2>
-                  <img
+                  <Image
                     className="mt-6 w-24"
                     src={item.sprites.other.showdown.front_default}
                     alt={item.name}
