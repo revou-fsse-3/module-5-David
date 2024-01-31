@@ -7,7 +7,7 @@ const PokemonHeader = () => {
         <Link href="/">PokeDex React!</Link>
       </h1>
       <Link href="/search">
-        <button className="basis-1/8 bg-yellow-600 p-8 text-4xl rounded-full">
+        <button className="basis-1/8 bg-yellow-500 p-8 text-4xl rounded-full">
           Search
         </button>
       </Link>
