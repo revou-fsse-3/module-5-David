@@ -1,3 +1,4 @@
+import PokemonHeader from "@/components/PokemonHeader";
 import { default as Axios } from "axios";
 import { useState } from "react";
 
@@ -44,6 +45,7 @@ function SearchPokemon() {
 
   return (
     <div className="App">
+      <PokemonHeader />
       <div className="flex flex-col bg-yellow-400 p-8 text-8xl font-bold text-stone-50 ">
         <input
           type="text"
