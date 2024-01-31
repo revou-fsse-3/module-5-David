@@ -1,6 +1,5 @@
 import { default as Axios } from "axios";
 import { useState } from "react";
-import Image from "next/image";
 
 function SearchPokemon() {
   const [pokemonName, setPokemonName] = useState<string>("");
@@ -69,7 +68,7 @@ function SearchPokemon() {
             <h1 className="text-4xl font-bold text-stone-800 py-4 capitalize m-4 bg-blue-200 w-1/4 rounded-md shadow-lg">
               {pokemon.name}
             </h1>
-            <Image className="w-60" src={pokemon.img} alt={pokemon.name} />
+            <img className="w-60" src={pokemon.img} alt={pokemon.name} />
 
             <h3 className="text-4xl font-bold text-stone-800 py-4 capitalize m-1 bg-blue-200 w-1/4 rounded-md shadow-lg">
               Type: {pokemon.type}
